@@ -1,2 +1,2 @@
-built/
+built/*.js
 node_modules/
