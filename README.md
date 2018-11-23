@@ -10,7 +10,7 @@ It labels your email like this:
 **This code is experimental and not feature complete. If it breaks, you get
   to keep both pieces.**
 
-##Setup
+## Setup
 First open your google drive and make a new script
 
 ![alt text](.setupimages/1.png "sc1")
