@@ -1,0 +1,23 @@
+{
+  "name": "geoip",
+  "version": "0.0.1",
+  "description": "GeoIP Tagger",
+  "main": "src/Code.ts",
+  "dependencies": {
+    "@types/google-apps-script": "0.0.32"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garretcarrot/Gmail_GeoIPTagger.git"
+  },
+  "author": "Garret Thompson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/garretcarrot/Gmail_GeoIPTagger/issues"
+  },
+  "homepage": "https://github.com/garretcarrot/Gmail_GeoIPTagger#readme"
+}
