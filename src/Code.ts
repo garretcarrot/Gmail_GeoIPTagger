@@ -31,9 +31,6 @@ function TagInbox() {
           ContainsGeoIP = true;
         }
       }
-      if (ContainsGeoIP) {
-        break;
-      }
       if (!ContainsGeoIP) {
         ProcessMsg(messages[0], GlobalLables, threads[i])
       }
