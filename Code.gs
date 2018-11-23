@@ -14,7 +14,7 @@ function TagInbox() {
     GlobalLables = GmailApp.getUserLabels();
   }
   
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < threads.length; i++) {
     // get all messages in a given thread
     var messages = threads[i].getMessages();
     if(threads[i].getLabels().length != 0) {
@@ -66,15 +66,9 @@ function ProcessMsg(msg,GlobalLables,thread) {
 }
 
 function GetEmailLocation(IP) {
-  try{
-    var rawjson = UrlFetchApp.fetch("http://freegeoip.net/json/" + IP);
-    var obj = JSON.parse(rawjson);
-    return obj.country_name;
-  } catch (e) {
-    var rawjson = UrlFetchApp.fetch("http://smart-ip.net/geoip-json/" + IP);
-    var obj = JSON.parse(rawjson);
-    return obj.countryName;
-  }
+  var rawjson = UrlFetchApp.fetch("http://ip-api.com/json/" + IP);
+  var obj = JSON.parse(rawjson);
+  return obj.country_name;
 }
 
 function EnsureWeHaveLabel(GlobalLables,TargetLabel) {
